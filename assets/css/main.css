@@ -2587,7 +2587,9 @@ input, select, textarea {
 		}
 
 /* Image */
-
+        .image main{
+		margin-bottom: 4px;
+	}
 	.image {
 		border: 0;
 		display: inline-block;
