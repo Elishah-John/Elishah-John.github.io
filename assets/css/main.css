@@ -2950,6 +2950,7 @@ input, select, textarea {
 		}
                 header.major2 {
 			top-padding: 10px;
+			bottom-padding: 1px;
 		}
 
 			header.major > :last-child {
