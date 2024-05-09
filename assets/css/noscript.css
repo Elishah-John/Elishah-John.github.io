@@ -24,6 +24,7 @@
 /* Intro */
 
 	body.is-preload #intro {
+		 padding-top: 10%;
 		opacity: 1;
 	}
 
