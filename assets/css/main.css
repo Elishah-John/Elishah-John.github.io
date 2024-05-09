@@ -2587,9 +2587,6 @@ input, select, textarea {
 		}
 
 /* Image */
-        .imagemain{
-		margin-bottom: 4px;
-	}
 	.image {
 		border: 0;
 		display: inline-block;
@@ -2951,7 +2948,7 @@ input, select, textarea {
 			text-align: center;
 		}
                 header.major2 {
-			margin: 0 0 4rem 0;
+			margin-bottom: 1px;
 			text-align: center;
 		}
 
