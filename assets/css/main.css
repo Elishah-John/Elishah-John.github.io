@@ -2659,7 +2659,7 @@ input, select, textarea {
 
 		}
 
-@media only screen {
+@media only screen  and (max-width: 736px){
     .video_pc {
 	    width: 420px;
         
