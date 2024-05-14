@@ -2658,18 +2658,20 @@ input, select, textarea {
 			}
 
 		}
-@media only screen and (max-width: 50px) {
+
     .video_pc {
+	    width: 100px;
         display: none;
     }
-}
 
 
-@media only screen and (min-width: 45%) {
+
+
     .video_mobile {
+	    width: 80px;
         display: none;
     }
-}
+
 
 
 	a.image {
