@@ -2636,7 +2636,7 @@ input, select, textarea {
 			  display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
 		}
 
 			.image.main:first-child {
@@ -2658,6 +2658,19 @@ input, select, textarea {
 			}
 
 		}
+@media only screen and (max-width: 1919px) {
+    .video_pc {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 1920px) {
+    .video_mobile {
+        display: none;
+    }
+}
+
 
 	a.image {
 		overflow: hidden;
