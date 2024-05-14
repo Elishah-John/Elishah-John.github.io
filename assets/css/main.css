@@ -2661,15 +2661,16 @@ input, select, textarea {
 
 @media only screen  and (max-width: 436px){
     .video_pc {
-	   min-width: 420px;
-        
+	   
+        display: none;
     }
 
 }
 
-@media only screen {
+@media only screen and (min-width: 420px){
     .video_mobile {
-	    width: 80px;
+	 
+	    display: none;
        
     }
 }
