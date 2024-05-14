@@ -2659,21 +2659,6 @@ input, select, textarea {
 
 		}
 
-@media only screen  and (max-width: 436px){
-    .video_pc {
-	   
-        display: none;
-    }
-
-}
-
-@media only screen and (max-width: 420px){
-    .video_mobile {
-	 
-	    display: none;
-       
-    }
-}
 
 	a.image {
 		overflow: hidden;
