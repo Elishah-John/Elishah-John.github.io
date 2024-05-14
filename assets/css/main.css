@@ -2658,14 +2658,14 @@ input, select, textarea {
 			}
 
 		}
-@media only screen and (max-width: 100%) {
+@media only screen and (max-width: 520px) {
     .video_pc {
         display: none;
     }
 }
 
 
-@media only screen and (min-width: 90%) {
+@media only screen and (min-width: 220%) {
     .video_mobile {
         display: none;
     }
