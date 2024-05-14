@@ -2659,20 +2659,20 @@ input, select, textarea {
 
 		}
 
+@media only screen{
     .video_pc {
 	    width: 100px;
         display: none;
     }
 
+}
 
-
-
+@media only screen{
     .video_mobile {
 	    width: 80px;
         display: none;
     }
-
-
+}
 
 	a.image {
 		overflow: hidden;
