@@ -2635,9 +2635,7 @@ input, select, textarea {
                .image.ej {
 		       border-radius: 50% ;
 		       	  display: block;
-                    margin-left: auto;
-                 margin-right: auto;
-                 width: 50%;
+                 width: 100%;
 	       }
 
 
