@@ -3757,13 +3757,21 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
-		@media screen and (max-width: 768px) {
-
-			#nav {
-				display: none;
-			}
-
-		}
+@media screen and (max-width: 768px) {
+    #nav {
+        justify-content: center; /* Center align icons on smaller screens */
+    }
+    
+    .icons {
+        flex-direction: column; /* Stack icons vertically */
+        align-items: center; /* Center align icons vertically */
+    }
+    
+    .icons li {
+        margin-left: 0;
+        margin-bottom: 10px; /* Add margin bottom for spacing between icons */
+    }
+}
 
 /* Main */
 
