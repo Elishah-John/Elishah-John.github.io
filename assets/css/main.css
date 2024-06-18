@@ -3757,13 +3757,6 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
-		@media screen and (max-width: 1080px) {
-
-			#nav {
-				display: none;
-			}
-
-		}
 
 /* Main */
 
