@@ -16,7 +16,7 @@ u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
-footer, header, hgroup, nav, output, ruby,
+footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -26,7 +26,7 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, nav, section {
+footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
@@ -2622,7 +2622,6 @@ input, select, textarea {
 			display: block;
 			margin: 2.5rem 0;
 			width: 100%;
-			border-radius: 8%;
 		}
 
 			.image.fit:first-child {
@@ -2633,20 +2632,10 @@ input, select, textarea {
 				width: 100%;
 			}
 
-               .image.ej {
-		       border-radius: 50% ;
-		       	  display: block;
-                 width: 100%;
-		       height: 50%;
-	       }
-
-
 		.image.main {
-			border-radius: 50%;
-			  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+			display: block;
+			margin: 4rem 0;
+			width: 100%;
 		}
 
 			.image.main:first-child {
@@ -2668,7 +2657,6 @@ input, select, textarea {
 			}
 
 		}
-
 
 	a.image {
 		overflow: hidden;
@@ -3757,7 +3745,7 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
-@media screen and (max-width: 980px) {
+		@media screen and (max-width: 980px) {
 
 			#nav {
 				display: none;
