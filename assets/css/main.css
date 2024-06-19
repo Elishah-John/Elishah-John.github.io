@@ -3757,17 +3757,13 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
-@media screen and (max-width: 3000px) {
-    #nav {
-        justify-content: center; /* Center align icons on smaller screens */
-    }
-    
-    #nav ul.icons {
-        flex-direction: column; /* Stack icons vertically */
-        align-items: center; /* Center align icons vertically */
-    }
-    
-}
+@media screen and (max-width: 980px) {
+
+			#nav {
+				display: none;
+			}
+
+		}
 
 /* Main */
 
