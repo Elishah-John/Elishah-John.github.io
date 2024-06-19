@@ -2587,7 +2587,12 @@ input, select, textarea {
 		}
 
 /* Image */
-
+          .image.ej {
+		       border-radius: 50% ;
+		       	  display: block;
+                 width: 100%;
+		       height: 50%;
+	       }
 	.image {
 		border: 0;
 		display: inline-block;
