@@ -63,7 +63,7 @@
 								<p>This code sets up pins for analog input (for reading X and Y axis values) and digital input (for reading a switch state), initializes a variable for position tracking, and declares four Servo objects which will control servo motors connected to the Arduino board. The specific functionality of the servo motors and how they respond to input from analog pins and the switch would be defined further in the Arduino sketch.</p>
 							
 								<!--Proto-1 -->
-								<h2>Prototype-I</h2>
+								<h2 id="second">Prototype-I</h2>
 								<p>The main purpose of this prototype is to evaluate and test the performance characteristics of the servo motors. By controlling the servos based on the value of <code>x_data</code>, the prototype aims to observe how well the servos respond to commands and whether they operate smoothly and reliably.</p>
 								<h3>Design Challenges:</h3><ul>
 								<li><b>Structural Integrity:</b><p>The current design lacks robustness in its structural framework. This could lead to instability or mechanical failures, especially when the servos are under load or during operation.</p></li>
@@ -76,7 +76,7 @@ This code governs the movement of four servos (s1 to s4) based on the variable<c
 								</p>
 
 								<!--Proto-2 -->
-								<h2>Prototype-II</h2>
+								<h2 id="third">Prototype-II</h2>
 								
 								<p>
 This iteration addresses the space constraint that hindered Prototype-I, allowing for better integration of components like the Arduino and breadboard. However, the ongoing challenge lies in improving the structural integrity of the design. While duct tape might humorously solve many everyday issues, it falls short when it comes to ensuring robustness in mechanical systems. Despite structural concerns, the code governing the servos remains unchanged from the previous prototype, continuing to increment or decrement servo positions based on x_data.
