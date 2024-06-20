@@ -77,12 +77,12 @@ This code governs the movement of four servos (s1 to s4) based on the variable<c
 
 								<!--Proto-2 -->
 								<h2>Prototype-II</h2>
-								<p>Arduino, micro servos, joystick, and jumper wires are the main components forming the foundation of the rover's control system. These components work together to create a versatile platform capable of various movements and functions.</p>
 								
-								<p>The Arduino serves as the central control unit, executing commands and interfacing with other components. Micro servos are essential for controlling the rover's movement mechanisms, providing precise rotational motion based on signals received from the Arduino.
-								The joystick acts as the rover's user interface, allowing intuitive control over its direction and speed. By manipulating the joystick, users can steer the rover in any direction and adjust its movement dynamically.</p>
+								<p>
+This iteration addresses the space constraint that hindered Prototype-I, allowing for better integration of components like the Arduino and breadboard. However, the ongoing challenge lies in improving the structural integrity of the design. While duct tape might humorously solve many everyday issues, it falls short when it comes to ensuring robustness in mechanical systems. Despite structural concerns, the code governing the servos remains unchanged from the previous prototype, continuing to increment or decrement servo positions based on x_data.
+This consistent approach ensures reliable servo control and synchronization across multiple units, contributing to the prototype's functionality despite its structural limitations.</p>
 							<script src="https://gist.github.com/Elishah-John/de450c093a8bad07a947feb1d4fff1ab.js"></script>
-								<p>This code sets up pins for analog input (for reading X and Y axis values) and digital input (for reading a switch state), initializes a variable for position tracking, and declares four Servo objects which will control servo motors connected to the Arduino board. The specific functionality of the servo motors and how they respond to input from analog pins and the switch would be defined further in the Arduino sketch.</p>
+								
 							</section>
 
 					</div>
