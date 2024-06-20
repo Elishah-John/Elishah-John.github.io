@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>My Journey</title>
+		  <meta property="og:image" content="Thumbnail.png" />
+		<meta charset="utf-8" />
+		<link rel = "shortcut icon" type= "x-icon" href = "profile.png">
+		<link rel="stylesheet" href="icon/css/fontawesome.css">
+		 <link href="icon/css/brands.css" rel="stylesheet" >
+		<link href="icon/css/solid.css" rel="stylesheet" >
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Journey</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+					<ul class="links">
+							<li><a href="index.html">Over-View</a></li>
+							<li><a href="Phase-1.html">Phase-1</a></li>
+							<li class="active"><a href="Phase-2.html">Phase-2</a></li>
+							<li><a href="Phase-1.html">Phase-3</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/elishah-john-a1a8b72a0/"  target="_blank" <i class="fa-brands fa-linkedin" style="font-size:20px;"></i></a></li>
+							<li><a href="https://github.com/Elishah-John" target="_blank" class="icon brands fa-github"><span class="label"></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date"></span>
+									<h1>PHASE-1</h1>
+									<p>Phase-1 of my rover project involved gathering materials for constructing<br />
+									the rover's base, as well as developing straightforward prototypes<br />
+									to test and refine my initial concepts.</p>
+								</header>
+								<center><div class="image main"><img src="images/pic01.jpg" alt="" /></div></center><br>
+								<h2 id="first">Gathering Materials</h2>
+								<p>Arduino, micro servos, joystick, and jumper wires are the main components forming the foundation of the rover's control system. These components work together to create a versatile platform capable of various movements and functions.</p>
+								
+								<p>The Arduino serves as the central control unit, executing commands and interfacing with other components. Micro servos are essential for controlling the rover's movement mechanisms, providing precise rotational motion based on signals received from the Arduino.
+								The joystick acts as the rover's user interface, allowing intuitive control over its direction and speed. By manipulating the joystick, users can steer the rover in any direction and adjust its movement dynamically.</p>
+							<script src="https://gist.github.com/Elishah-John/f4d9fab33af1ee415b53dee97f9f31a5.js"></script>
+								<p>This code sets up pins for analog input (for reading X and Y axis values) and digital input (for reading a switch state), initializes a variable for position tracking, and declares four Servo objects which will control servo motors connected to the Arduino board. The specific functionality of the servo motors and how they respond to input from analog pins and the switch would be defined further in the Arduino sketch.</p>
+							
+								<!--Proto-1 -->
+								<h2 id="second">Prototype-I</h2>
+								<p>The main purpose of this prototype is to evaluate and test the performance characteristics of the servo motors. By controlling the servos based on the value of <code>x_data</code>, the prototype aims to observe how well the servos respond to commands and whether they operate smoothly and reliably.</p>
+								<h3>Design Challenges:</h3><ul>
+								<li><b>Structural Integrity:</b><p>The current design lacks robustness in its structural framework. This could lead to instability or mechanical failures, especially when the servos are under load or during operation.</p></li>
+								<li><b>Space Constraints:</b><p>There isn't sufficient space allocated for mounting the Arduino, breadboard, or other necessary components. This limitation hinders the ability to integrate and secure these components effectively within the prototype.</p></li>
+								</ul>
+									<script src="https://gist.github.com/Elishah-John/de450c093a8bad07a947feb1d4fff1ab.js"></script>
+								<p>
+									
+This code governs the movement of four servos (s1 to s4) based on the variable<code> x_data</code>. If<code> x_data</code> is 550 or higher and pos (representing servo position) is less than or equal to 180 degrees, pos is incremented by 15 degrees, and this updated position is written to all servos simultaneously. Conversely, if <code>x_data </code>code>is 500 or lower and pos is greater than or equal to 0, pos is decremented by 15 degrees, with the new position immediately reflected across all servos. This straightforward control mechanism ensures synchronized servo operation while maintaining position safety within standard servo limits. However, it operates within a prototype constrained by structural integrity and limited space for housing essential components like the Arduino and breadboard, highlighting potential challenges for real-world deployment.
+								</p>
+
+								<!--Proto-2 -->
+								<h2 id="third">Prototype-II</h2>
+								
+								<p>
+This iteration addresses the space constraint that hindered Prototype-I, allowing for better integration of components like the Arduino and breadboard. However, the ongoing challenge lies in improving the structural integrity of the design. While duct tape might humorously solve many everyday issues, it falls short when it comes to ensuring robustness in mechanical systems. Despite structural concerns, the code governing the servos remains unchanged from the previous prototype, continuing to increment or decrement servo positions based on x_data.
+This consistent approach ensures reliable servo control and synchronization across multiple units, contributing to the prototype's functionality despite its structural limitations.</p>
+							<script src="https://gist.github.com/Elishah-John/de450c093a8bad07a947feb1d4fff1ab.js"></script>
+								
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						
+					
+						<section class="split contact">
+							
+								
+							<section>
+								<h3>Email</h3>
+								<p>elishahjohn9@gmail.com</p>
+							</section>
+
+								<section>
+								<h3>LinkedIn</h3>
+								<p><a href="https://www.linkedin.com/in/elishah-john-a1a8b72a0/">Check it out</a></p>
+							</section>
+							
+						</section>
+					</footer>
+
+				
+					<div id="copyright">
+						<ul><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
