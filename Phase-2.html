@@ -90,6 +90,13 @@ The ultrasonic sound sensor plays a pivotal role in advancing the autonomy of th
 											<li>Returns to 90 degrees (moveToPosition(90)).</li>
 											<li>Moves to 180 degrees (moveToPosition(180)).</li>
 										</ul>
+										
+									</ul>
+									<li><b>Finding the Longest Distance:</b></li>
+									<ul>
+										<li>After completing the sequence of movements, the code retrieves the distance from the sensor again (distanceAfterMoves).</li>
+										<li>It then compares <code>distanceAfterMoves</code> with <code>longestDistance</code>.</li>
+										<li>If <code>distanceAfterMoves</code> is greater than <code>longestDistance</code>, it updates <code>longestDistance</code> to <code>distanceAfterMoves</code> and records the corresponding servo position (posSensor) in <code>longestPosition</code>.</li>
 									</ul>
 								</ul>
 								</p>
