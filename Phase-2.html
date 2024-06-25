@@ -82,8 +82,8 @@ The ultrasonic sound sensor plays a pivotal role in advancing the autonomy of th
 									</ul>
 									<li><b>Loop Function (loop()):</b></li>
 									<ul>
-										The loop continuously reads the current distance from the sensor using getDistance()
-										If the current distance (currentDistance) is less than 100, indicating an obstacle within range, the servo executes a predefined sequence of movements:
+										1.The loop continuously reads the current distance from the sensor using <code>getDistance()</code><br>
+										2.If the current distance (currentDistance) is less than 100, indicating an obstacle within range, the servo executes a predefined sequence of movements:
 										<ul>
 											<li>Moves to 90 degrees (moveToPosition(90)).</li>
 											<li>Moves to 0 degrees (moveToPosition(0)).</li>
