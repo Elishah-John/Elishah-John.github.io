@@ -54,14 +54,20 @@
 									ultrasonic sound sensor and LDRs.</p>
 								</header>
 								<center><div class="image main"><img src="images/pic01.jpg" alt="" /></div></center><br>
-								<h2 id="first">Gathering Materials</h2>
-								<p>Arduino, micro servos, joystick, and jumper wires are the main components forming the foundation of the rover's control system. These components work together to create a versatile platform capable of various movements and functions.</p>
+								<h2 id="first">Ultrasonic Sound Sensor</h2>
+								<p>
+The ultrasonic sound sensor plays a pivotal role in advancing the autonomy of the Rover. By linking the sensor to the servos, the system triggers servo movement when the distance falls below a specified threshold, enabling dynamic and responsive behavior in navigating obstacles autonomously.</p>
 								
-								<p>The Arduino serves as the central control unit, executing commands and interfacing with other components. Micro servos are essential for controlling the rover's movement mechanisms, providing precise rotational motion based on signals received from the Arduino.
-								The joystick acts as the rover's user interface, allowing intuitive control over its direction and speed. By manipulating the joystick, users can steer the rover in any direction and adjust its movement dynamically.</p>
-							<script src="https://gist.github.com/Elishah-John/f4d9fab33af1ee415b53dee97f9f31a5.js"></script>
-								<p>This code sets up pins for analog input (for reading X and Y axis values) and digital input (for reading a switch state), initializes a variable for position tracking, and declares four Servo objects which will control servo motors connected to the Arduino board. The specific functionality of the servo motors and how they respond to input from analog pins and the switch would be defined further in the Arduino sketch.</p>
-							
+							<script src="https://gist.github.com/Elishah-John/906788618478f1acb4a575ff528d5d14.js"></script>
+								<p><b>In this version:</b></p>
+							<ul>
+						 		<li>The code checks the distance measured by the ultrasonic sensor.</li>
+								<li>If the distance is greater than or equal to 80 cm (distance >= 80), it increments the servo positions (pos) by 15 degrees (pos = pos + 15).</li>
+								<li>If the distance is less than or equal to 75 cm (distance <= 75), it decrements the servo positions (pos) by 15 degrees (pos = pos - 15).</li>
+								<li>Servo positions are then updated (s1.write(pos), s2.write(pos), s3.write(pos), s4.write(pos)) accordingly to reflect the new position.</li>
+							</ul>
+								<p>This code snippet illustrates how the ultrasonic sensor interacts with the servos to control the prototype's movements based on detected distances, 
+								thereby enhancing its autonomous navigation capabilities.</p>
 								<!--Proto-1 -->
 								<h2 id="second">Prototype-I</h2>
 								<p>The main purpose of this prototype is to evaluate and test the performance characteristics of the servo motors. By controlling the servos based on the value of <code>x_data</code>, the prototype aims to observe how well the servos respond to commands and whether they operate smoothly and reliably.</p>
