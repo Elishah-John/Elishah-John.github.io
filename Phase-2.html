@@ -77,13 +77,13 @@ The ultrasonic sound sensor plays a pivotal role in advancing the autonomy of th
 								<ul>
 									<li><b>Variables Initialization:</b></li>
 									<ul>
-										<code>longestDistance</code>: Stores the longest distance detected during the sequence of servo movements.
-										<code>longestPosition</code>: Stores the servo position (posSensor) corresponding to the longestDistance.
+										<code>longestDistance</code>:  Stores the longest distance detected during the sequence of servo movements.
+										<code>longestPosition</code>:  Stores the servo position (posSensor) corresponding to the longestDistance.
 									</ul>
 									<li><b>Loop Function (loop()):</b></li>
 									<ul>
-										1.The loop continuously reads the current distance from the sensor using <code>getDistance()</code><br>
-										2.If the current distance (currentDistance) is less than 100, indicating an obstacle within range, the servo executes a predefined sequence of movements:
+										<b>1.</b> The loop continuously reads the current distance from the sensor using <code>getDistance()</code><br>
+										<b>2.</b> If the current distance (currentDistance) is less than 100, indicating an obstacle within range, the servo executes a predefined sequence of movements:
 										<ul>
 											<li>Moves to 90 degrees (moveToPosition(90)).</li>
 											<li>Moves to 0 degrees (moveToPosition(0)).</li>
