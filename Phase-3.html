@@ -69,16 +69,18 @@ For the final preparation of my rover, I integrated a 4WD chassis as the foundat
 							</p>
 								
 								<!--Proto-1 -->
-								<h2 id="second">Prototype-I</h2>
-								<p>The main purpose of this prototype is to evaluate and test the performance characteristics of the servo motors. By controlling the servos based on the value of <code>x_data</code>, the prototype aims to observe how well the servos respond to commands and whether they operate smoothly and reliably.</p>
-								<h3>Design Challenges:</h3><ul>
-								<li><b>Structural Integrity:</b><p>The current design lacks robustness in its structural framework. This could lead to instability or mechanical failures, especially when the servos are under load or during operation.</p></li>
-								<li><b>Space Constraints:</b><p>There isn't sufficient space allocated for mounting the Arduino, breadboard, or other necessary components. This limitation hinders the ability to integrate and secure these components effectively within the prototype.</p></li>
-								</ul>
-									<script src="https://gist.github.com/Elishah-John/de450c093a8bad07a947feb1d4fff1ab.js"></script>
+								<h2 id="second">Rover Assembly</h2>
 								<p>
-									
-This code governs the movement of four servos (s1 to s4) based on the variable<code> x_data</code>. If<code> x_data</code> is 550 or higher and pos (representing servo position) is less than or equal to 180 degrees, pos is incremented by 15 degrees, and this updated position is written to all servos simultaneously. Conversely, if <code>x_data </code>code>is 500 or lower and pos is greater than or equal to 0, pos is decremented by 15 degrees, with the new position immediately reflected across all servos. This straightforward control mechanism ensures synchronized servo operation while maintaining position safety within standard servo limits. However, it operates within a prototype constrained by structural integrity and limited space for housing essential components like the Arduino and breadboard, highlighting potential challenges for real-world deployment.
+After gathering all the materials, the next step was assembling everything. Initially, the focus was on connecting the tires, motors, and chassis body to establish the foundation of the rover. 
+								</p>
+								<p>
+Following the mechanical assembly, attention shifted to integrating the circuitry that forms the intelligence and control center of the rover. This involved connecting components such as the motor driver, Arduino, and power supply batteries. 
+Once the physical and electronic integration was complete, the next steps involved testing and calibration of the entire system, calibrating the motor driver settings, adjusting sensor thresholds etc.
+								</p>
+						<script src="https://gist.github.com/Elishah-John/71a0eec40289f42d67e49fa884d4fae5.js"></script>
+								<p>
+The constants in the code provide clear and meaningful names for the connections and operational parameters, enhancing code readability and maintainability while facilitating precise control over the rover's functions.
+	
 								</p>
 
 								<!--Proto-2 -->
