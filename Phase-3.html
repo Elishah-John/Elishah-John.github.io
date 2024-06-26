@@ -84,13 +84,25 @@ The constants in the code provide clear and meaningful names for the connections
 								</p>
 
 								<!--Proto-2 -->
-								<h2 id="third">Prototype-II</h2>
+								<h2 id="third">Finalization</h2>
 								
 								<p>
-This iteration addresses the space constraint that hindered Prototype-I, allowing for better integration of components like the Arduino and breadboard. However, the ongoing challenge lies in improving the structural integrity of the design. While duct tape might humorously solve many everyday issues, it falls short when it comes to ensuring robustness in mechanical systems. Despite structural concerns, the code governing the servos remains unchanged from the previous prototype, continuing to increment or decrement servo positions based on x_data.
-This consistent approach ensures reliable servo control and synchronization across multiple units, contributing to the prototype's functionality despite its structural limitations.</p>
-							<script src="https://gist.github.com/Elishah-John/de450c093a8bad07a947feb1d4fff1ab.js"></script>
-								
+									
+
+With the installation of the top chassis, integrating key components such as the ultrasonic sound sensor for distance measurement, the Light Dependent Resistor (LDR) paired with an LED for light detection, and other essential modules, the rover reaches its final stage of assembly. These components collectively enhance the rover's capabilities, enabling it to perceive its surroundings intelligently and respond autonomously.
+</p>
+								<p>
+Its autonomous movement capabilities allow it to navigate and explore its environment independently, adapting to obstacles detected by the ultrasonic sensor with precision. The automatic lighting system, controlled by the LDR, ensures optimal visibility in varying light conditions, enhancing its operational efficiency.
+								</p>
+					<script src="https://gist.github.com/Elishah-John/836f1df0b6a9909b7b4a223eb748c459.js"></script>
+								<p>
+This code demonstrates a simple yet effective obstacle avoidance strategy for a rover:
+								</p>
+								<ul>
+									<li>It continuously checks the distance to an obstacle using an ultrasonic sensor.</li>
+									<li>If an obstacle is detected within a specified range (MAX_DISTANCE), it stops the rover, selects a random direction (left or right), and turns accordingly to avoid the obstacle.</li>
+									<li>If no obstacle is detected, it continues moving forward.</li>
+								</ul>
 							</section>
 
 					</div>
